@@ -1,0 +1,26 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["standard-with-typescript", "plugin:vue/vue3-essential"],
+  "parserOptions": {
+    "project": "./tsconfig.node.json", // Adjusted the path
+    "ecmaVersion": 2021, // Changed from "latest" to the actual version
+    "sourceType": "module"
+  },
+  "plugins": ["vue"],
+  "rules": {
+    "vue/max-attributes-per-line": [
+      "error",
+      {
+        "singleline": {
+          "max": 1
+        },
+        "multiline": {
+          "max": 1
+        }
+      }
+    ]
+  }
+}
