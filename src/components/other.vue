@@ -3,9 +3,8 @@
 </script>
 
 <template>
-  <RouterView></RouterView>
+  <h1>here2</h1>
 </template>
 
 <style scoped>
-
 </style>
