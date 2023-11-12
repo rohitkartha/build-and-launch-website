@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <h1>here</h1>
+  <h1>members</h1>
 </template>
 
 <style scoped>
