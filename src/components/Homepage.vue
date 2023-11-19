@@ -25,8 +25,14 @@ import Header from "../components/Header.vue";
 }
 
 .image-logo {
-  width: 850px;
-  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 50%;
+  background: transparent;
 }
 
 .apply-button {
@@ -34,7 +40,7 @@ import Header from "../components/Header.vue";
   background: black;
   color: white;
   width: 10em;
-  height: 5em;
+  height: 3em;
   text-align: center;
   display: inline-block;
   border-radius: 16px;

@@ -26,18 +26,22 @@ defineProps(["logo"]);
 <style scoped>
 .header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: right;
 }
 button {
   background: transparent;
-  width: 6em;
+  width: 5em;
   height: 3em;
   color: black;
+  text-align: center;
+  padding: 0px;
 }
 
 img {
   width: 7em;
   height: 3em;
   background: transparent;
+  position: absolute;
+  left: 20px;
 }
 </style>
