@@ -27,7 +27,7 @@ defineProps(["logo"]);
 .header {
   display: flex;
   justify-content: right;
-  height: 40px;
+  padding: 10px;
 }
 button {
   background: transparent;

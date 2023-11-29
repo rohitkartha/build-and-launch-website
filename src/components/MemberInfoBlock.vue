@@ -10,32 +10,40 @@ defineProps<{ memberBlock: member }>();
     <img
       :src="memberBlock.imageUrl"
       alt="member image" />
-    <h3>{{ memberBlock.name }}</h3>
-    <h4>{{ memberBlock.title }}</h4>
+    <div class="memberName">
+      {{ memberBlock.name }}
+    </div>
+    <div class="memberTitle">
+      {{ memberBlock.title }}
+    </div>
   </div>
 </template>
 
 <style scoped>
 .memberContainer {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  height: 220px;
+  display: grid;
   align-items: center;
+  height: 250px;
+  width: 200px;
+  padding: 12px;
+  background: transparent;
 }
 
 img {
+  height: 200px;
   width: 200px;
-  height: 160px;
 }
 
-h3 {
+.memberName {
   color: black;
-  margin: none;
+  text-align: left;
+  background: transparent;
+  font-size: 20px;
+  font-weight: bold;
 }
-
-h4 {
+.memberTitle {
   color: black;
-  margin: none;
+  text-align: left;
+  background: transparent;
 }
 </style>
