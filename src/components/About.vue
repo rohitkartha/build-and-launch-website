@@ -22,7 +22,7 @@ import Header from "../components/Header.vue";
       and Launch members also receive access to
       education sessions on a variety of topics,
       our speaker series, social events, and more!
-      Michigan Builda nd Launch is more than just
+      Michigan Build and Launch is more than just
       a place to learn. It's a community of
       passionate students who are interested in
       building innovative products.
@@ -63,5 +63,6 @@ button {
   text-align: center;
   padding: 0px;
   border: 1px solid;
+  margin-left: 10px;
 }
 </style>

@@ -7,49 +7,49 @@ const members: member[] = [
     name:"Aarian Dhanani"
 }, 
 {
-    title: "President",
+    title: "VP of Marketing",
     imageUrl: "https://picsum.photos/200",
-    name:"Aarian Dhanani"
+    name:"Sana Aliminati"
 }, 
 {
-    title: "President",
+    title: "VP of Finance",
     imageUrl: "https://picsum.photos/200",
-    name:"Aarian Dhanani"
+    name:"Nupur Shah"
 }, 
 {
-    title: "President",
+    title: "VP of External Affairs",
     imageUrl: "https://picsum.photos/200",
-    name:"Aarian Dhanani"
+    name:"Alyssa Rodriguez"
 }, 
 {
-    title: "President",
+    title: "VP of Internal Affairs",
     imageUrl: "https://picsum.photos/200",
-    name:"Aarian Dhanani"
+    name:"Tanya Haque"
 }, 
 {
-    title: "President",
+    title: "VP of Recruitment",
     imageUrl: "https://picsum.photos/200",
-    name:"Aarian Dhanani"
+    name:"Rishab Jayaraman"
 }, 
 {
-    title: "President",
+    title: "VP of Projects",
     imageUrl: "https://picsum.photos/200",
-    name:"Aarian Dhanani"
+    name:"Nathaniel Tibetu"
 }, 
 {
-    title: "President",
+    title: "VP of Operations",
     imageUrl: "https://picsum.photos/200",
-    name:"Aarian Dhanani"
+    name:"Rohit Kartha"
 }, 
 {
-    title: "President",
+    title: "VP of Education",
     imageUrl: "https://picsum.photos/200",
-    name:"Aarian Dhanani"
+    name:"Youna Wang"
 }, 
 {
-    title: "President",
+    title: "VP of Education",
     imageUrl: "https://picsum.photos/200",
-    name:"Aarian Dhanani"
+    name:"Anjani Malli Reddi"
 }, 
 ]
 
