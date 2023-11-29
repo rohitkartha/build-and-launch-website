@@ -4,10 +4,12 @@ defineProps(["logo"]);
 
 <template>
   <div class="header">
-    <img
-      v-if="logo"
-      src="../assets/Logo.png"
-      alt="Build and Launch Logo" />
+    <router-link to="/">
+      <img
+        v-if="logo"
+        src="../assets/Logo.png"
+        alt="Build and Launch Logo" />
+    </router-link>
     <button @click="$router.push('About')">
       About
     </button>

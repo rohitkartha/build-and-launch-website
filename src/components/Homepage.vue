@@ -5,11 +5,13 @@ import Header from "../components/Header.vue";
 <template>
   <div class="homepage-container">
     <Header :logo="true"></Header>
+
     <div class="image-logo">
       <img
         src="../assets/Logo.png"
         alt="Michigan Build and Launch Logo" />
     </div>
+
     <div class="apply">
       <button class="apply-button">Apply</button>
     </div>
