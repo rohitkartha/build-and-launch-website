@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import Header from "../components/Header.vue";
+import router from "../router/router";
+
+function goApply() {
+  router.push("Apply");
+}
 </script>
 
 <template>
@@ -13,7 +18,11 @@ import Header from "../components/Header.vue";
     </div>
 
     <div class="apply">
-      <button class="apply-button">Apply</button>
+      <button
+        class="apply-button"
+        @click="goApply">
+        Apply
+      </button>
     </div>
   </div>
 </template>
@@ -46,5 +55,9 @@ img {
   text-align: center;
   display: inline-block;
   border-radius: 16px;
+}
+
+.apply {
+  margin-top: 20px;
 }
 </style>

@@ -19,7 +19,9 @@ defineProps(["logo"]);
     <button @click="$router.push('Contact')">
       Contact
     </button>
-    <button @click="$router.push('Apply')">
+    <button
+      class="apply"
+      @click="$router.push('Apply')">
       Apply
     </button>
   </div>
@@ -28,16 +30,22 @@ defineProps(["logo"]);
 <style scoped>
 .header {
   display: flex;
-  justify-content: right;
-  padding: 10px;
+  max-height: 50px;
+  width: 100%;
+  margin-top: 12px;
 }
 button {
   background: transparent;
-  width: 5em;
+  width: 15em;
   height: 3em;
   color: black;
   text-align: center;
-  padding: 0px;
+  padding: 0;
+}
+.apply {
+  background: black;
+  color: white;
+  border-radius: 30px;
 }
 
 img {
