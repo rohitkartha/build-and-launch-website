@@ -42,7 +42,6 @@ function goApply() {
 }
 
 img {
-  width: 50%;
   background: transparent;
 }
 
