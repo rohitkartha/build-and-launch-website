@@ -29,7 +29,7 @@ import Header from "../components/Header.vue";
     </p>
     <div class="buttonContainer">
       <button>Contact</button>
-      <button>Apply</button>
+      <button class="apply">Apply</button>
     </div>
   </div>
 </template>
@@ -57,12 +57,23 @@ h1 {
 
 button {
   background: transparent;
-  width: 5em;
+  width: 10em;
   height: 3em;
   color: black;
   text-align: center;
   padding: 0px;
   border: 1px solid;
   margin-left: 10px;
+}
+
+.apply {
+  background-color: #ddd;
+  background: black;
+  color: white;
+  width: 10em;
+  height: 3em;
+  text-align: center;
+  display: inline-block;
+  border-radius: 16px;
 }
 </style>

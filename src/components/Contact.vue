@@ -64,6 +64,11 @@ input::placeholder {
   font-size: 15px;
 }
 
+input,
+textarea {
+  color: black;
+}
+
 button {
   background: black;
   width: 100%;
