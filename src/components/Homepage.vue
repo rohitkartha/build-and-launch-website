@@ -43,6 +43,7 @@ function goApply() {
 
 img {
   background: transparent;
+  object-fit: contain;
 }
 
 .apply-button {

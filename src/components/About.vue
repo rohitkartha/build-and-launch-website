@@ -37,8 +37,8 @@ import Header from "../components/Header.vue";
 <style scoped>
 .container {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  height: 70%;
+  grid-template-rows: 1fr 3fr 1fr;
+  height: 100%;
 }
 
 p {
