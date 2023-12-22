@@ -46,4 +46,11 @@ img {
   text-align: left;
   background: transparent;
 }
+
+@media (width < 750px) {
+  .memberContainer {
+    min-height: 280px;
+    box-sizing: border-box; /* NEW */
+  }
+}
 </style>

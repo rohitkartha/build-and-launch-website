@@ -9,9 +9,11 @@ import Header from "./Header.vue";
     <Header :logo="true" />
     <h1>Meet the Executive Board</h1>
     <div class="membersContainer">
-      <MemberInfoBlock
-        v-for="member in members"
-        :member-block="member" />
+      <div class="overflow">
+        <MemberInfoBlock
+          v-for="member in members"
+          :member-block="member" />
+      </div>
     </div>
   </div>
 </template>
@@ -31,5 +33,34 @@ h1 {
   color: black;
   font-weight: bold;
   text-align: left;
+}
+.overflow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (width < 750px) {
+  .container {
+    display: block;
+  }
+  .membersContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    height: 100%;
+  }
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    height: 1em;
+  }
+  .overflow {
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+  }
 }
 </style>

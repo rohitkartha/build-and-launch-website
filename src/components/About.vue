@@ -5,31 +5,33 @@ import Header from "../components/Header.vue";
 <template>
   <div class="container">
     <Header :logo="true" />
-    <h1>About Us</h1>
-    <p>
-      This is Michigan Build and Launch. We are a
-      student organization at the University of
-      Michigan, and our goal is to bring together
-      computer science, user-experience design,
-      and business students. Members will work in
-      project teams over the course of multiple
-      semesters and receive real-world experience
-      when it comes to taking an idea and building
-      it into a real product to be launched.
-    </p>
-    <p>
-      Beyound our project teams, Michigan Build
-      and Launch members also receive access to
-      education sessions on a variety of topics,
-      our speaker series, social events, and more!
-      Michigan Build and Launch is more than just
-      a place to learn. It's a community of
-      passionate students who are interested in
-      building innovative products.
-    </p>
-    <div class="buttonContainer">
-      <button>Contact</button>
-      <button class="apply">Apply</button>
+    <div class="text">
+      <h1>About Us</h1>
+      <p>
+        This is Michigan Build and Launch. We are
+        a student organization at the University
+        of Michigan, and our goal is to bring
+        together computer science, user-experience
+        design, and business students. Members
+        will work in project teams over the course
+        of multiple semesters and receive
+        real-world experience when it comes to
+        taking an idea and building it into a real
+        product to be launched. <br />Beyound our
+        project teams, Michigan Build and Launch
+        members also receive access to education
+        sessions on a variety of topics, our
+        speaker series, social events, and more!
+        Michigan Build and Launch is more than
+        just a place to learn. It's a community of
+        passionate students who are interested in
+        building innovative products.
+      </p>
+
+      <div class="buttonContainer">
+        <button>Contact</button>
+        <button class="apply">Apply</button>
+      </div>
     </div>
   </div>
 </template>
@@ -37,8 +39,15 @@ import Header from "../components/Header.vue";
 <style scoped>
 .container {
   display: grid;
-  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+}
+
+.text {
   height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
 }
 
 p {
@@ -49,10 +58,12 @@ p {
 h1 {
   text-align: left;
   color: black;
+  max-height: 50px;
 }
 
 .buttonContainer {
   display: flex;
+  max-height: 200px;
 }
 
 button {
@@ -75,5 +86,16 @@ button {
   text-align: center;
   display: inline-block;
   border-radius: 16px;
+}
+
+@media (width < 750px) {
+  .text {
+    min-height: none;
+  }
+  .container {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    height: 100%;
+  }
 }
 </style>

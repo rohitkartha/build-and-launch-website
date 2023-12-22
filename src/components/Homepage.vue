@@ -60,4 +60,10 @@ img {
 .apply {
   margin-top: 20px;
 }
+
+@media (height < 500px) {
+  .homepage-container {
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
 </style>

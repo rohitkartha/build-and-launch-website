@@ -11,4 +11,7 @@
   background: url(./assets/Background.png);
   overflow: hidden;
 }
+#app {
+  padding: 12px;
+}
 </style>
