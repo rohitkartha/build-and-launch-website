@@ -6,7 +6,6 @@ import Header from "../components/Header.vue";
   <div class="container">
     <Header :logo="true" />
     <h1>Contact Us</h1>
-
     <div class="messageFields">
       <input
         type="text"
@@ -20,11 +19,12 @@ import Header from "../components/Header.vue";
         id=""
         placeholder="Email" />
       <input
+        class="message"
         type="text"
         name=""
         id=""
         placeholder="Message" />
-      <button>SEND</button>
+      <button>Send</button>
     </div>
   </div>
 </template>
@@ -32,10 +32,18 @@ import Header from "../components/Header.vue";
 <style scoped>
 .container {
   display: grid;
-  grid-template-rows: 1fr 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr 5fr 1fr;
   height: 70%;
 }
 
+.message {
+  height: 1000px;
+}
+
+.message::placeholder {
+  position: relative;
+  bottom: 46px;
+}
 h1 {
   text-align: left;
   color: black;
@@ -61,12 +69,18 @@ input {
 input::placeholder {
   color: black;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
+}
+
+.message::target-text {
+  position: relative;
+  bottom: 46px;
 }
 
 input,
 textarea {
   color: black;
+  font-size: 20px;
 }
 
 button {
@@ -78,6 +92,18 @@ button {
 @media (height < 500px) {
   .container {
     height: 100%;
+  }
+}
+
+@media (width< 500px) {
+  .container {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+  }
+  .messageFields {
+    width: 80%;
+    padding: 10px;
   }
 }
 </style>

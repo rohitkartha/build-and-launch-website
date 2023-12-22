@@ -12,8 +12,7 @@ import Header from "../components/Header.vue";
       University of Michigan. We accept
       undergraduate applicants from any field of
       study at the University of Michigan.
-    </p>
-    <p>
+      <br />
       If you're interested in applying, please
       complete our general member interest form.
     </p>
@@ -26,7 +25,7 @@ import Header from "../components/Header.vue";
 <style scoped>
 .container {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   height: 50%;
 }
 
@@ -53,5 +52,12 @@ button {
   text-align: center;
   display: inline-block;
   border-radius: 16px;
+}
+
+@media (width < 750px) {
+  .container {
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    height: 60%;
+  }
 }
 </style>
