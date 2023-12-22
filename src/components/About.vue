@@ -1,5 +1,14 @@
 <script setup lang="ts">
 import Header from "../components/Header.vue";
+import router from "../router/router";
+
+function goApply() {
+  router.push("Apply");
+}
+
+function goContact() {
+  router.push("Contact");
+}
 </script>
 
 <template>
@@ -29,8 +38,14 @@ import Header from "../components/Header.vue";
       </p>
 
       <div class="buttonContainer">
-        <button>Contact</button>
-        <button class="apply">Apply</button>
+        <button @click="goContact">
+          Contact
+        </button>
+        <button
+          @click="goApply"
+          class="apply">
+          Apply
+        </button>
       </div>
     </div>
   </div>
