@@ -34,6 +34,12 @@ function generateRandomSixDigitNumber() {
   );
 }
 
+function clearFields() {
+  name.value = "";
+  email.value = "";
+  message.value = "";
+}
+
 const dynamicVariableName = `userMessage${generateRandomSixDigitNumber()}`;
 
 // Initialize Firebase
@@ -48,6 +54,7 @@ function sendMessage() {
     email: email.value,
     message: message.value,
   });
+  clearFields();
 }
 </script>
 
