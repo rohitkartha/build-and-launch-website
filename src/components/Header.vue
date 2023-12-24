@@ -49,10 +49,19 @@ button {
 }
 
 img {
-  width: 7em;
-  height: 3em;
+  display: block;
+  max-width: 230px;
+  max-height: 3em;
+  width: auto;
+  height: auto;
   background: transparent;
   position: absolute;
   left: 20px;
+}
+
+@media (width < 500px) {
+  img {
+    max-height: 2.5em;
+  }
 }
 </style>
