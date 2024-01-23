@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Header from "../components/Header.vue";
 import router from "../router/router";
 
 function goApply() {
@@ -13,7 +12,6 @@ function goContact() {
 
 <template>
   <div class="container">
-    <Header :logo="true" />
     <div class="text">
       <h1>About Us</h1>
       <p>

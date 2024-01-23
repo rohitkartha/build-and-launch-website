@@ -29,10 +29,14 @@ defineProps(["logo"]);
 
 <style scoped>
 .header {
+  position: absolute;
   display: flex;
   max-height: 50px;
   width: 100%;
   margin-top: 12px;
+  z-index: 102;
+  top: 0;
+  background-color: transparent;
 }
 button {
   background: transparent;
@@ -46,6 +50,7 @@ button {
   background: black;
   color: white;
   border-radius: 30px;
+  margin-right: 30px;
 }
 
 img {
@@ -57,6 +62,9 @@ img {
   background: transparent;
   position: absolute;
   left: 20px;
+}
+a {
+  background-color: transparent;
 }
 
 @media (width < 500px) {

@@ -1,10 +1,7 @@
-<script setup lang="ts">
-import Header from "../components/Header.vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="container">
-    <Header :logo="true" />
     <h1>Apply</h1>
     <p>
       Our first standard recruitment round will be

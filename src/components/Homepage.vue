@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Header from "../components/Header.vue";
 import router from "../router/router";
 
 function goApply() {
@@ -9,36 +8,37 @@ function goApply() {
 
 <template>
   <div class="homepage-container">
-    <Header :logo="true"></Header>
-
-    <div class="image-logo">
-      <img
-        src="../assets/Logo.png"
-        alt="Michigan Build and Launch Logo" />
-    </div>
-
-    <div class="apply">
-      <button
-        class="apply-button"
-        @click="goApply">
-        Apply
-      </button>
-    </div>
+    <img
+      class="image-logo"
+      src="../assets/Logo.png"
+      alt="Michigan Build and Launch Logo" />
+    <button
+      class="apply-button"
+      @click="goApply">
+      Apply
+    </button>
   </div>
 </template>
 
 <style scoped>
 .homepage-container {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 28%;
+  width: 24%;
+  top: 34%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
 }
 
 .image-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 300px;
 }
 
 img {
@@ -47,23 +47,13 @@ img {
 }
 
 .apply-button {
-  background-color: #ddd;
-  background: black;
-  color: white;
-  width: 10em;
-  height: 3em;
-  text-align: center;
-  display: inline-block;
-  border-radius: 16px;
-}
-
-.apply {
-  margin-top: 20px;
+  width: 186px;
+  height: 68px;
+  border-radius: 50px;
+  background: #d3f9f9;
+  color: black;
 }
 
 @media (height < 500px) {
-  .homepage-container {
-    grid-template-rows: 1fr 1fr 1fr;
-  }
 }
 </style>
