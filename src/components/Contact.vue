@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Header from "../components/Header.vue";
 import { ref as ref2 } from "vue";
 
 import { initializeApp } from "firebase/app";
@@ -60,7 +59,6 @@ function sendMessage() {
 
 <template>
   <div class="container">
-    <Header :logo="true" />
     <h1>Contact Us</h1>
     <div class="messageFields">
       <input
@@ -88,9 +86,19 @@ function sendMessage() {
 
 <style scoped>
 .container {
-  display: grid;
-  grid-template-rows: 1fr 1fr 5fr 1fr;
-  height: 70%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 80%;
+  width: 100%;
+  top: 4%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
 }
 
 .message {

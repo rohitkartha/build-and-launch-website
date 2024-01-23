@@ -21,9 +21,19 @@
 
 <style scoped>
 .container {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  height: 50%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 80%;
+  width: 100%;
+  top: 4%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
 }
 
 p {

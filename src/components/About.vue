@@ -51,8 +51,19 @@ function goContact() {
 
 <style scoped>
 .container {
-  display: grid;
-  grid-template-rows: 1fr 4fr 1fr;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 24%;
+  right: 0;
+  height: 80%;
+  width: 60%;
+  top: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
 }
 
 .text {
