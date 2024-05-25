@@ -22,11 +22,10 @@ window.onload = function () {
       <div class="bar"></div>
     </div>
     <div class="mobile-nav">
-      <a href="/home">here</a>
+      <a href="/">home</a>
       <a href="/about">about</a>
       <a href="/members">members</a>
       <a href="/contact">contact</a>
-      <a href="/apply">apply</a>
     </div>
   </div>
 </template>
@@ -86,8 +85,6 @@ window.onload = function () {
   width: 100%;
   height: 100vh;
   display: block;
-  background-color: white;
-  opacity: 0.1;
   padding-top: 120px;
   transition: 0.4s;
   overflow: hidden;
@@ -104,9 +101,6 @@ window.onload = function () {
   height: 20px;
   color: black;
   text-decoration: none;
-}
-
-.mobile-nav a:hover {
-  background-color: #24104f;
+  opacity: 1;
 }
 </style>

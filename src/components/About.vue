@@ -112,7 +112,7 @@ button {
   border-radius: 16px;
 }
 
-@media (width < 750px) {
+@media (width < 768px) {
   .text {
     min-height: none;
   }

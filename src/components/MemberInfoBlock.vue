@@ -47,7 +47,7 @@ img {
   background: transparent;
 }
 
-@media (width < 750px) {
+@media (width < 768px) {
   .memberContainer {
     min-height: 280px;
     box-sizing: border-box; /* NEW */

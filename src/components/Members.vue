@@ -48,7 +48,7 @@ h1 {
   flex-wrap: wrap;
 }
 
-@media (width < 750px) {
+@media (width < 768px) {
   .container {
     display: block;
   }

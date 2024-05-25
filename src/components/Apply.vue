@@ -61,7 +61,7 @@ button {
   border-radius: 16px;
 }
 
-@media (width < 750px) {
+@media (width < 768px) {
   .container {
     grid-template-rows: 1fr 1fr 2fr 1fr;
     height: 60%;

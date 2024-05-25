@@ -66,10 +66,4 @@ img {
 a {
   background-color: transparent;
 }
-
-@media (width < 500px) {
-  img {
-    max-height: 2.5em;
-  }
-}
 </style>
